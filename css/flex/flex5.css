@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 60rem;
+    width: 100%;
+    margin: 2rem;
+
+    display: flex;
+    gap: 1em;
+}
+.container .sidebar {
+    width: 20%;
+    padding: 10px;
+    color: #fff;
+}
+
+.container .left {
+    order: 1;
+    background-color: #3498db;
+}
+.container main {
+    order: 2;
+}
+.container :right {
+    order: 3;
+    background-color: #34495e;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        gap: 0;
+    }
+.container main

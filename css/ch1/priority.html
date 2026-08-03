@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 스타일 우선순위
+        !important > 인라인선언 > 아이디선택자 > 클래스선택자 > 태스선택자 > 전체 > 상속
+
+     */
+      p#text {
+        color: red;
+      }
+      p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area">
+      <p id="text" style="color: green">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur repellat aliquam nulla facere sed. Quae, quam
+        laborum? Ab officiis iure doloribus sed distinctio in excepturi? Aliquam aut ullam non eius!
+      </p>
+    </div>
+  </body>
+</html>
