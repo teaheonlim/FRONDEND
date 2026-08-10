@@ -4,8 +4,59 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 80%;
+        margin: 100px;
+      }
+      table {
+        border-collapse: collapse;
+        margin-top: 30px;
+        display: none;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 0.4em 0.8em;
+      }
+      input[type="date"] {
+        appearance: none;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 8px 12px;
+        color: #333;
+        font-family: inherit;
+      }
+    </style>
   </head>
   <body>
+    <div class="container">
+      <h2>일별 박스 오피스</h2>
+      <div>
+        <input type="date" name="date" id="date" max="2026-08-06" />
+        <span>* 날짜 선택 시 해당 일의 1~10위 박스 오피스</span>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <td>순위</td>
+            <td>전일대비</td>
+            <td>영화명</td>
+            <td>개봉일</td>
+            <td>당일관객수</td>
+            <td>누적관객수</td>
+            <td>누적매출액</td>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="detail"></div>
+    </div>
     <script src="movie.js"></script>
   </body>
 </html>
